@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORTIS GYM | パーソナルジム</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================
+       HEADER / NAV
+       ======================================== -->
+  <header data-section="header">
+    <nav class="nav">
+      <a href="#" class="nav-logo">FORTIS GYM</a>
+      <ul class="nav-links">
+        <li><a href="#reasons">選ばれる理由</a></li>
+        <li><a href="#features">特徴</a></li>
+        <li><a href="#lessons">レッスン</a></li>
+        <li><a href="#pricing">料金</a></li>
+        <li><a href="#testimonials">お客様の声</a></li>
+        <li><a href="#trial" class="nav-cta">無料体験</a></li>
+      </ul>
+      <button class="hamburger" type="button" aria-label="メニュー" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#reasons">選ばれる理由</a></li>
+          <li><a href="#features">特徴</a></li>
+          <li><a href="#lessons">レッスン</a></li>
+          <li><a href="#pricing">料金</a></li>
+          <li><a href="#testimonials">お客様の声</a></li>
+          <li><a href="#trial">無料体験</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================
+       1. メインビジュアル
+       ======================================== -->
+  <section data-section="hero">
+    <div class="hero-visual">
+      <img src="images/hero_gym.png" alt="FORTIS GYM Interior" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">PERSONAL TRAINING GYM — TOKYO</p>
+      <h1 class="hero-title js-reveal-text">TRANSFORM<br>YOUR BODY.</h1>
+      <p class="hero-sub">あなたの理想のカラダへ。<br>専属トレーナーが最短ルートで導く。</p>
+      <div class="hero-actions">
+        <a href="#trial" class="btn-primary">無料体験を予約する →</a>
+        <a href="#reasons" class="hero-scroll-hint">詳しく見る ↓</a>
+      </div>
+    </div>
+    <div class="hero-ticker">
+      <span>PERSONAL TRAINING</span>
+      <span class="ticker-dot">●</span>
+      <span>BODY MAKE</span>
+      <span class="ticker-dot">●</span>
+      <span>DIET SUPPORT</span>
+      <span class="ticker-dot">●</span>
+      <span>NUTRITION GUIDE</span>
+      <span class="ticker-dot">●</span>
+      <span>PERSONAL TRAINING</span>
+      <span class="ticker-dot">●</span>
+      <span>BODY MAKE</span>
+      <span class="ticker-dot">●</span>
+      <span>DIET SUPPORT</span>
+      <span class="ticker-dot">●</span>
+      <span>NUTRITION GUIDE</span>
+      <span class="ticker-dot">●</span>
+    </div>
+  </section>
+
+  <!-- ========================================
+       2. こんなお悩みはありませんか？
+       ======================================== -->
+  <section data-section="problems">
+    <div class="container">
+      <div class="section-header js-reveal">
+        <span class="label">PROBLEMS</span>
+        <h2>こんなお悩みは<br>ありませんか？</h2>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-item js-reveal">
+          <span class="problem-num">01</span>
+          <p>運動不足を感じているが、<br>何から始めれば良いかわからない</p>
+        </div>
+        <div class="problem-item js-reveal">
+          <span class="problem-num">02</span>
+          <p>ジムに通ったことはあるが、<br>効果が出ずに続かなかった</p>
+        </div>
+        <div class="problem-item js-reveal">
+          <span class="problem-num">03</span>
+          <p>食事制限だけのダイエットが<br>辛くて長続きしない</p>
+        </div>
+        <div class="problem-item js-reveal">
+          <span class="problem-num">04</span>
+          <p>仕事が忙しくて<br>まとまった時間が取れない</p>
+        </div>
+        <div class="problem-item js-reveal">
+          <span class="problem-num">05</span>
+          <p>大型ジムで器具の使い方がわからず<br>恥ずかしい思いをしたことがある</p>
+        </div>
+      </div>
+      <div class="problems-answer js-reveal">
+        <p>そのお悩み、<strong>FORTIS GYM</strong> が解決します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       3. ジムが選ばれる理由
+       ======================================== -->
+  <section data-section="reasons" id="reasons">
+    <div class="container">
+      <div class="section-header js-reveal">
+        <span class="label">WHY CHOOSE US</span>
+        <h2>FORTIS GYMが<br>選ばれる4つの理由</h2>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card js-reveal">
+          <span class="reason-num">REASON 01</span>
+          <h3>完全個室の<br>プライベート空間</h3>
+          <p>他のお客様と完全に区切られた個室で、人目を一切気にすることなく、トレーニングに集中できます。初めての方でも安心して始められる環境を整えています。</p>
+        </div>
+        <div class="reason-card js-reveal">
+          <span class="reason-num">REASON 02</span>
+          <h3>プロによる<br>マンツーマン指導</h3>
+          <p>国家資格・認定資格を保有する専属トレーナーが1対1でサポート。あなたの目標・体質・生活スタイルに完全に合わせた最適なプログラムを提供します。</p>
+        </div>
+        <div class="reason-card js-reveal">
+          <span class="reason-num">REASON 03</span>
+          <h3>食事管理サポート<br>付きプラン</h3>
+          <p>トレーニングだけでなく、食事面もトレーナーがサポート。無理のない食事改善で代謝を高め、リバウンドしにくい体質へと変えていきます。</p>
+        </div>
+        <div class="reason-card js-reveal">
+          <span class="reason-num">REASON 04</span>
+          <h3>最短2ヶ月で<br>結果にコミット</h3>
+          <p>科学的根拠に基づいたプログラム設計により、最短2ヶ月での明確な身体変化にコミットします。定期的な計測と記録で変化を可視化し、モチベーションを維持します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       4. ジムの特徴
+       ======================================== -->
+  <section data-section="features" id="features">
+    <div class="container">
+      <div class="section-header js-reveal">
+        <span class="label">FEATURES</span>
+        <h2>ジムの特徴</h2>
+      </div>
+      <div class="features-list">
+
+        <div class="feature-item js-reveal">
+          <div class="feature-image">
+            <img src="images/feature_machine.png" alt="最新トレーニングマシン">
+          </div>
+          <div class="feature-content">
+            <span class="feature-label">FEATURE 01</span>
+            <h3>最新マシン完備</h3>
+            <p>業務用の最新トレーニングマシンを完備。ウェイトトレーニング、有酸素運動、ストレッチエリアを完全分離した設計で、効率的なトレーニングを実現します。器具はすべてトレーナーが使い方を丁寧に指導するため、未経験の方でも安心です。</p>
+          </div>
+        </div>
+
+        <div class="feature-item feature-item--reverse js-reveal">
+          <div class="feature-image">
+            <img src="images/feature_private.png" alt="完全個室トレーニング空間">
+          </div>
+          <div class="feature-content">
+            <span class="feature-label">FEATURE 02</span>
+            <h3>完全個室トレーニング</h3>
+            <p>各トレーニングスペースは完全個室。入館から着替え、トレーニング、退館まで、他のお客様と顔を合わせることなく利用できます。体型を気にせず全力でトレーニングに集中できる環境です。</p>
+          </div>
+        </div>
+
+        <div class="feature-item js-reveal">
+          <div class="feature-image">
+            <img src="images/feature_nutrition.png" alt="栄養管理サポート">
+          </div>
+          <div class="feature-content">
+            <span class="feature-label">FEATURE 03</span>
+            <h3>栄養管理サポート</h3>
+            <p>トレーナーによる食事記録の分析と具体的なアドバイスを実施。プロテインや栄養補助食品の選び方から毎日の食事改善まで、継続しやすい形でサポートします。運動×食事の両輪で結果を最大化します。</p>
+          </div>
+        </div>
+
+        <div class="feature-item feature-item--reverse js-reveal">
+          <div class="feature-image">
+            <img src="images/feature_schedule.png" alt="柔軟なスケジュール対応">
+          </div>
+          <div class="feature-content">
+            <span class="feature-label">FEATURE 04</span>
+            <h3>柔軟なスケジュール</h3>
+            <p>早朝6時から夜22時まで営業。仕事前でも仕事後でも、あなたのライフスタイルに合わせてセッションを組めます。急な予定変更にも前日まで柔軟に対応。忙しい方でも無理なく続けられます。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       5. レッスン内容
+       ======================================== -->
+  <section data-section="lessons" id="lessons">
+    <div class="container">
+      <div class="section-header js-reveal">
+        <span class="label">PROGRAMS</span>
+        <h2>レッスン内容</h2>
+      </div>
+      <div class="lessons-grid">
+
+        <div class="lesson-card js-reveal">
+          <div class="lesson-image">
+            <img src="images/lesson_diet.png" alt="ダイエットコース">
+          </div>
+          <div class="lesson-body">
+            <h3>ダイエット<br>コース</h3>
+            <p>科学的なカロリーコントロールと有酸素・無酸素運動の組み合わせで、リバウンドしにくい健康的な痩身を実現します。</p>
+            <ul>
+              <li>体脂肪率の測定・管理</li>
+              <li>有酸素運動プログラム</li>
+              <li>食事改善サポート</li>
+              <li>体重・体組成の記録</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson-card js-reveal">
+          <div class="lesson-image">
+            <img src="images/lesson_muscle.png" alt="筋力アップコース">
+          </div>
+          <div class="lesson-body">
+            <h3>筋力アップ<br>コース</h3>
+            <p>正しいフォームとプログレッシブオーバーロードの原則に基づき、効率よく筋肉量を増やしていきます。</p>
+            <ul>
+              <li>フリーウェイトトレーニング</li>
+              <li>マシントレーニング</li>
+              <li>プロテイン摂取指導</li>
+              <li>筋肉量の定期測定</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson-card js-reveal">
+          <div class="lesson-image">
+            <img src="images/lesson_bodymake.png" alt="ボディメイクコース">
+          </div>
+          <div class="lesson-body">
+            <h3>ボディメイク<br>コース</h3>
+            <p>ただ痩せるだけでなく、引き締まった美しいボディラインの形成を目指します。男女問わず最も人気のコースです。</p>
+            <ul>
+              <li>部位別ターゲットトレーニング</li>
+              <li>姿勢改善プログラム</li>
+              <li>体型変化の記録・管理</li>
+              <li>ウエスト・各部位計測</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson-card js-reveal">
+          <div class="lesson-image">
+            <img src="images/lesson_conditioning.png" alt="コンディショニングコース">
+          </div>
+          <div class="lesson-body">
+            <h3>コンディショニング<br>コース</h3>
+            <p>身体の柔軟性・可動域の改善と、日常生活での動きやすさを高めます。肩こり・腰痛にお悩みの方にも最適です。</p>
+            <ul>
+              <li>ストレッチ・モビリティ強化</li>
+              <li>体幹強化トレーニング</li>
+              <li>姿勢・歩行改善</li>
+              <li>コンディション管理指導</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       6. 料金表
+       ======================================== -->
+  <section data-section="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header js-reveal">
+        <span class="label">PRICING</span>
+        <h2>料金表</h2>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card js-reveal">
+          <span class="pricing-plan-name">LIGHT</span>
+          <div class="pricing-amount-wrap">
+            <span class="pricing-yen">¥</span>
+            <span class="pricing-amount">29,800</span>
+            <span class="pricing-tax">（税込 ¥32,780）</span>
+          </div>
+          <p class="pricing-frequency">月4回 — 週1回ペース</p>
+          <ul class="pricing-includes">
+            <li>マンツーマントレーニング</li>
+            <li>トレーニングプログラム作成</li>
+            <li>入浴施設無料利用</li>
+            <li>トレーニングウェア貸出</li>
+          </ul>
+          <a href="#trial" class="btn-outline">体験予約</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured js-reveal">
+          <span class="pricing-badge">MOST POPULAR</span>
+          <span class="pricing-plan-name">STANDARD</span>
+          <div class="pricing-amount-wrap">
+            <span class="pricing-yen">¥</span>
+            <span class="pricing-amount">49,800</span>
+            <span class="pricing-tax">（税込 ¥54,780）</span>
+          </div>
+          <p class="pricing-frequency">月8回 — 週2回ペース</p>
+          <ul class="pricing-includes">
+            <li>マンツーマントレーニング</li>
+            <li>トレーニングプログラム作成</li>
+            <li>食事管理・栄養サポート</li>
+            <li>体組成測定（月1回）</li>
+            <li>入浴施設無料利用</li>
+            <li>トレーニングウェア貸出</li>
+          </ul>
+          <a href="#trial" class="btn-primary">体験予約</a>
+        </div>
+
+        <div class="pricing-card js-reveal">
+          <span class="pricing-plan-name">PREMIUM</span>
+          <div class="pricing-amount-wrap">
+            <span class="pricing-yen">¥</span>
+            <span class="pricing-amount">79,800</span>
+            <span class="pricing-tax">（税込 ¥87,780）</span>
+          </div>
+          <p class="pricing-frequency">月16回 — 週4回ペース</p>
+          <ul class="pricing-includes">
+            <li>マンツーマントレーニング</li>
+            <li>トレーニングプログラム作成</li>
+            <li>食事管理・栄養サポート</li>
+            <li>体組成測定（随時）</li>
+            <li>24時間LINEサポート</li>
+            <li>入浴施設無料利用</li>
+            <li>トレーニングウェア貸出</li>
+          </ul>
+          <a href="#trial" class="btn-outline">体験予約</a>
+        </div>
+
+      </div>
+      <p class="pricing-note js-reveal">※ 初回体験トレーニングは無料でご参加いただけます。入会のご判断はトレーニング後に行っていただけますので、まずはお気軽にご予約ください。</p>
+    </div>
+  </section>
+
+  <!-- ========================================
+       7. お客様の声
+       ======================================== -->
+  <section data-section="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header js-reveal">
+        <span class="label">TESTIMONIALS</span>
+        <h2>お客様の声</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card js-reveal">
+          <div class="testimonial-result-tag">-12kg / 3ヶ月</div>
+          <p class="testimonial-text">「社会人になってから体重が増え続け、ダイエットを何度試みても挫折していました。FORTISに入会してからは、トレーナーさんが毎回丁寧に指導してくれるので、楽しみながら続けられています。気づいたら3ヶ月で12kg落ちていました。食事の指導も具体的で実践しやすかったです。」</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar"><img src="images/avatar_male.png" alt="T.K さん"></div>
+            <div>
+              <p class="testimonial-name">T.K さん</p>
+              <p class="testimonial-profile">28歳・会社員（男性）</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card--wide js-reveal">
+          <div class="testimonial-result-tag">体脂肪率 -8% / 2ヶ月</div>
+          <p class="testimonial-text">「完全個室なので、体型を気にせずトレーニングに集中できました。以前は大型ジムで周りの目が気になって全力を出せなかったのですが、ここでは本当に集中できます。食事のアドバイスも具体的で、2ヶ月でウエストが10cm細くなり洋服のサイズが変わりました！」</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar"><img src="images/avatar_female1.png" alt="M.S さん"></div>
+            <div>
+              <p class="testimonial-name">M.S さん</p>
+              <p class="testimonial-profile">32歳・フリーランス（女性）</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card js-reveal">
+          <div class="testimonial-result-tag">筋肉量 +3kg / 4ヶ月</div>
+          <p class="testimonial-text">「夜勤があって不規則な生活でも、柔軟にスケジュールを組んでもらえています。肩こりや腰痛も改善されて、仕事のパフォーマンスも上がりました。体が変わると自信もついてきます。」</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar"><img src="images/avatar_nurse.png" alt="R.N さん"></div>
+            <div>
+              <p class="testimonial-name">R.N さん</p>
+              <p class="testimonial-profile">25歳・看護師（女性）</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       8. 体験受付中
+       ======================================== -->
+  <section data-section="trial" id="trial">
+    <div class="trial-bg-text" aria-hidden="true">FREE TRIAL</div>
+    <div class="container">
+      <div class="trial-inner">
+        <span class="label">FREE TRIAL</span>
+        <h2 class="trial-heading js-reveal">体験受付中</h2>
+        <p class="trial-sub js-reveal">まずは無料体験トレーニングで、<br>FORTISを実際に体感してください。</p>
+        <div class="trial-points js-reveal">
+          <span>✓ 入会費・体験費 0円</span>
+          <span>✓ 当日の入会勧誘なし</span>
+          <span>✓ 60分の本格トレーニング</span>
+          <span>✓ カウンセリング・体組成測定付き</span>
+        </div>
+        <a href="#" class="btn-primary btn-large js-reveal">無料体験を予約する →</a>
+        <p class="trial-tel js-reveal">
+          お電話でのご予約・お問い合わせ<br>
+          <a href="tel:0300000000" class="trial-tel-num">03-0000-0000</a><br>
+          <span>受付時間 10:00〜21:00（年中無休）</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer data-section="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-logo">FORTIS GYM</p>
+          <p class="footer-tagline">あなたの変革を、ともに。</p>
+        </div>
+        <div class="footer-info">
+          <p>〒000-0000 東京都○○区○○1-2-3</p>
+          <p>TEL: <a href="tel:0300000000">03-0000-0000</a></p>
+          <p>営業時間: 6:00〜22:00（年中無休）</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#reasons">選ばれる理由</a>
+          <a href="#features">特徴</a>
+          <a href="#lessons">レッスン</a>
+          <a href="#pricing">料金</a>
+          <a href="#testimonials">お客様の声</a>
+          <a href="#trial">無料体験</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 FORTIS GYM. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -2,27 +2,30 @@
    CSS Custom Properties
    ============================================ */
 :root {
-  --color-bg:       #1A1A1A;
-  --color-surface:  #222222;
+  --color-bg: #1A1A1A;
+  --color-surface: #222222;
   --color-surface2: #2A2A2A;
-  --color-text:     #F5F5F5;
-  --color-muted:    #888888;
-  --color-accent:   #FF3333;
-  --color-border:   #2E2E2E;
+  --color-text: #F5F5F5;
+  --color-muted: #888888;
+  --color-accent: #FF3333;
+  --color-border: #2E2E2E;
 
   --font-head: 'Cabinet Grotesk', 'Space Grotesk', sans-serif;
   --font-body: 'Lora', Georgia, serif;
 
-  --max-w:      1200px;
-  --pad:        16px;
+  --max-w: 1200px;
+  --pad: 16px;
   --section-py: 80px;
-  --gap:        8px;
+  --gap: 8px;
 }
+
 
 /* ============================================
    Reset
    ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -47,7 +50,9 @@ a {
   text-decoration: none;
 }
 
-ul { list-style: none; }
+ul {
+  list-style: none;
+}
 
 img {
   max-width: 100%;
@@ -57,15 +62,31 @@ img {
 /* ============================================
    Typography
    ============================================ */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-head);
   font-weight: 700;
   line-height: 1.05;
 }
 
-h1 { font-size: clamp(3.2rem, 9vw, 7.5rem); letter-spacing: -0.01em; }
-h2 { font-size: clamp(2rem, 5vw, 3.8rem);   letter-spacing: 0.02em; text-transform: uppercase; }
-h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-transform: uppercase; }
+h1 {
+  font-size: clamp(3.2rem, 9vw, 7.5rem);
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
 /* ============================================
    Layout
@@ -260,9 +281,11 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
 .hamburger.active .hamburger-line:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
+
 .hamburger.active .hamburger-line:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active .hamburger-line:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
@@ -337,13 +360,11 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(26, 26, 26, 0.55) 0%,
-    rgba(26, 26, 26, 0.3) 40%,
-    rgba(26, 26, 26, 0.75) 75%,
-    #1A1A1A 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(26, 26, 26, 0.55) 0%,
+      rgba(26, 26, 26, 0.3) 40%,
+      rgba(26, 26, 26, 0.75) 75%,
+      #1A1A1A 100%);
   pointer-events: none;
 }
 
@@ -454,8 +475,13 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
 }
 
 @keyframes ticker-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* ============================================
@@ -484,8 +510,13 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
 }
 
 /* Row 2: irregular spans — 5 + 7 */
-.problem-item:nth-child(4) { grid-column: span 5; }
-.problem-item:nth-child(5) { grid-column: span 7; }
+.problem-item:nth-child(4) {
+  grid-column: span 5;
+}
+
+.problem-item:nth-child(5) {
+  grid-column: span 7;
+}
 
 .problem-item:hover {
   border-color: var(--color-accent);
@@ -545,11 +576,22 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
 }
 
 /* Row 1: 6 + 6 equal */
-.reason-card:nth-child(1) { grid-column: 1 / 7; }
-.reason-card:nth-child(2) { grid-column: 7 / 13; }
+.reason-card:nth-child(1) {
+  grid-column: 1 / 7;
+}
+
+.reason-card:nth-child(2) {
+  grid-column: 7 / 13;
+}
+
 /* Row 2: 4 + 8 asymmetric */
-.reason-card:nth-child(3) { grid-column: 1 / 5; }
-.reason-card:nth-child(4) { grid-column: 5 / 13; }
+.reason-card:nth-child(3) {
+  grid-column: 1 / 5;
+}
+
+.reason-card:nth-child(4) {
+  grid-column: 5 / 13;
+}
 
 .reason-card {
   padding: 16px;
@@ -911,9 +953,18 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
 }
 
 /* Magazine layout: 4 + 5 + 3 */
-.testimonial-card:nth-child(1) { grid-column: 1 / 5; }
-.testimonial-card:nth-child(2) { grid-column: 5 / 10; margin-top: 40px; }
-.testimonial-card:nth-child(3) { grid-column: 10 / 13; }
+.testimonial-card:nth-child(1) {
+  grid-column: 1 / 5;
+}
+
+.testimonial-card:nth-child(2) {
+  grid-column: 5 / 10;
+  margin-top: 40px;
+}
+
+.testimonial-card:nth-child(3) {
+  grid-column: 10 / 13;
+}
 
 .testimonial-card {
   padding: 16px;
@@ -1084,9 +1135,17 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
   margin-bottom: 32px;
 }
 
-.footer-brand { grid-column: span 4; }
-.footer-info  { grid-column: span 4; }
-.footer-nav   { grid-column: span 4; }
+.footer-brand {
+  grid-column: span 4;
+}
+
+.footer-info {
+  grid-column: span 4;
+}
+
+.footer-nav {
+  grid-column: span 4;
+}
 
 .footer-logo {
   font-family: var(--font-head);
@@ -1167,16 +1226,32 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
     --pad: 3%;
   }
 
-  h2 { font-size: clamp(1.8rem, 4.5vw, 3rem); }
+  h2 {
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+  }
 
   /* Reasons: all 6-cols */
-  .reason-card:nth-child(3) { grid-column: 1 / 7; }
-  .reason-card:nth-child(4) { grid-column: 7 / 13; }
+  .reason-card:nth-child(3) {
+    grid-column: 1 / 7;
+  }
+
+  .reason-card:nth-child(4) {
+    grid-column: 7 / 13;
+  }
 
   /* Testimonials: 6 + 6 + 6 on tablet */
-  .testimonial-card:nth-child(1) { grid-column: 1 / 7; }
-  .testimonial-card:nth-child(2) { grid-column: 7 / 13; margin-top: 0; }
-  .testimonial-card:nth-child(3) { grid-column: 1 / 7; }
+  .testimonial-card:nth-child(1) {
+    grid-column: 1 / 7;
+  }
+
+  .testimonial-card:nth-child(2) {
+    grid-column: 7 / 13;
+    margin-top: 0;
+  }
+
+  .testimonial-card:nth-child(3) {
+    grid-column: 1 / 7;
+  }
 }
 
 /* ============================================
@@ -1190,8 +1265,13 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
   }
 
   /* Nav */
-  .hamburger { display: flex; }
-  .nav-links  { display: none; }
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
 
   /* Hero */
   .hero-content {
@@ -1223,13 +1303,19 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
     min-height: auto;
   }
 
-  .feature-image { min-height: 200px; }
+  .feature-image {
+    min-height: 200px;
+  }
 
   /* Lessons: 2 columns */
-  .lesson-card { grid-column: span 6; }
+  .lesson-card {
+    grid-column: span 6;
+  }
 
   /* Pricing: full width */
-  .pricing-card { grid-column: 1 / -1; }
+  .pricing-card {
+    grid-column: 1 / -1;
+  }
 
   /* Testimonials: full width */
   .testimonial-card:nth-child(1),
@@ -1257,5 +1343,7 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.5rem); letter-spacing: 0.03em; text-trans
 
 /* Lessons: 2-col on mobile if needed */
 @media (max-width: 480px) {
-  .lesson-card { grid-column: 1 / -1; }
+  .lesson-card {
+    grid-column: 1 / -1;
+  }
 }
